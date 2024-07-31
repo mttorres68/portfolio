@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/* background: #af8a; */
+/* color: #103; */
+
+body {
+  margin: 0 4rem;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-title{
+  font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #110033;
+  cursor: default;
+}
+
+.menu-title::before{
+  content: "< ";
+  color: #70DA1C;
+}
+.menu-title::after{
+  content: " />";
+  color: #70DA1C;
+
+
+}
+
+.menu ul{
+  display: flex;
+  list-style: none;
+  padding: 2rem 0; 
+  gap: 20px;
+}
+
+
+.menu a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 8px;
+  border: 2px solid transparent;
+  border-radius: .6rem;
+  transition: .5s;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.2rem;
+}
+
+.menu a:hover{
+  border-color: #110033;
+}
+
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
