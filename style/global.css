@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  background-color: #1c1c1c;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

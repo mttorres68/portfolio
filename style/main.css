@@ -1,0 +1,47 @@
+.about {
+  max-width: 1200px;
+  padding: 40px 20px;
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.about-photo img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+  height: 100%;
+}
+
+.about h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.25rem;
+  font-family: "Urbanist", sans-serif;
+  top: -55px;
+  right: 190px;
+  position: absolute;
+  background: linear-gradient(45deg, #70da1c, #2e4231);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about p {
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.115rem;
+  text-align: justify;
+  padding-top: 3rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+@media (max-width: 700) {
+}
