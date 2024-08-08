@@ -1,7 +1,7 @@
 .about {
   max-width: 1200px;
   padding: 40px 20px;
-  width: 100vw;
+  /* width: 100vw; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -43,5 +43,36 @@
   font-family: "Urbanist", sans-serif;
 }
 
-@media (max-width: 700) {
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .about-content h1 {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-content h1 {
+    font-size: 3.5rem;
+    /* text-wrap: nowrap; */
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content h1 {
+    font-size: 2rem;
+  }
 }
