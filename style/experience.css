@@ -1,0 +1,41 @@
+.experience {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.experience-title {
+  width: 8rem;
+  font-weight: bold;
+  position: relative;
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.115;
+}
+
+.experience-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.experience-title h1::after {
+  position: absolute;
+  content: "/";
+  margin-left: 4px;
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #2e4231, #70da1c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+.experience-title span {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
