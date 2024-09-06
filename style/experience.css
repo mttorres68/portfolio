@@ -38,4 +38,222 @@
 .experience-title span {
   font-size: 2rem;
   letter-spacing: 0.1rem;
+  position: absolute;
+}
+
+.experience-title span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #d9f123;
+  position: absolute;
+  top: 20px;
+  border-radius: 50%;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  row-gap: 30px;
+  /* column-gap: 10px; */
+  font-family: "Urbanist", sans-serif;
+}
+
+.contentContainer {
+  /* grid-column-end: span 3; */
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.contentContainer:hover {
+  transform: scale(1.2);
+}
+#iPdelve::before {
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #70da1c;
+  color: #70da1c;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  border-radius: 0px 5px 0px 5px;
+  -webkit-border-radius: 0px 10px 0px 10px;
+  -moz-border-radius: 0px 10px 0px 10px;
+}
+
+.container-main div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-main div h4 {
+  font-size: 2rem;
+}
+
+.container-main div span {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+[data-contribution="time"] {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #8f8f8f;
+  letter-spacing: 1px;
+}
+
+.contentContainer .technologies {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contentContainer .technologies li {
+  background-color: #282935;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e8e8e8;
+  text-wrap: nowrap;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-title h4 {
+  font-size: 2rem;
+}
+
+.project-title span {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.project::before {
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #d9f123;
+  color: #d9f123;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  border-radius: 0px 5px 0px 5px;
+  border-radius: 0px 5px 0px 5px;
+  -webkit-border-radius: 0px 10px 0px 10px;
+  -moz-border-radius: 0px 10px 0px 10px;
+}
+
+@media (max-width: 950px) {
+  .experience {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  .experience-title {
+    width: 100%;
+  }
+
+  .contentContainer {
+    transition: transform 0.5s;
+  }
+  .contentContainer:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-title h1 {
+    font-size: 3rem;
+  }
+  .experience-title span {
+    font-size: 2rem;
+  }
+  .container {
+    row-gap: 20px;
+  }
+
+  .container-main div h4 {
+    font-size: 1.8rem;
+  }
+
+  .contentContainer .technologies {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .contentContainer .technologies li {
+    padding: 8px;
+  }
+
+  .project-title {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-title h1 {
+    font-size: 2rem;
+  }
+  .experience-title span {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    row-gap: 20px;
+  }
+
+  .container-main div {
+    gap: 10px;
+  }
+  .container-main div h4 {
+    font-size: 1.4rem;
+  }
+
+  .container-main div span {
+    font-size: 1rem;
+  }
+
+  [data-contribution="time"] {
+    font-size: 0.8rem;
+  }
+
+  .contentContainer .technologies {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .contentContainer .technologies li {
+    padding: 8px;
+  }
+
+  .project-title {
+    gap: 10px;
+  }
+
+  .project-title h4 {
+    font-size: 1.4rem;
+  }
+  .project-title span {
+    font-size: 1rem;
+  }
+
+  .experience-title span::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #d9f123;
+    position: absolute;
+    top: 15px;
+    border-radius: 50%;
+  }
 }
