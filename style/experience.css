@@ -69,7 +69,7 @@
 }
 
 .contentContainer:hover {
-  transform: scale(1.2);
+  transform: scale(1.09);
 }
 #iPdelve::before {
   content: "";
@@ -121,6 +121,7 @@
   border-radius: 5px;
   color: #e8e8e8;
   text-wrap: nowrap;
+  cursor: default;
 }
 
 .project-title {
@@ -184,6 +185,7 @@
 
   .container-main div h4 {
     font-size: 1.8rem;
+    cursor: pointer;
   }
 
   .contentContainer .technologies {
@@ -256,4 +258,53 @@
     top: 15px;
     border-radius: 50%;
   }
+}
+
+#uniqueDetailsDiv {
+  display: none;
+  cursor: default;
+}
+.contentContainer:hover #uniqueDetailsDiv {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+summary {
+  padding: 10px 0;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+hr {
+  margin-top: 10px;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(112, 218, 28),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* 
+
+#70da1c
+*/
+
+#modeDetails {
+  cursor: pointer;
+  color: rgb(110, 110, 199);
 }
