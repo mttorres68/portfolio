@@ -301,7 +301,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .content-icon {
     gap: 20px;
   }
@@ -325,10 +325,15 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .content-title {
     font-size: 1.2rem;
-    width: 10.5rem;
+    width: 40ch;
+  }
+  .content-title {
+    animation: blinkCursor 600ms steps(95) infinite normal,
+      typing 6s steps(45) 1s infinite normal both,
+      textGlow 4s ease-in-out 5s infinite;
   }
 
   @keyframes typing {
@@ -338,7 +343,7 @@
     }
     50%,
     90% {
-      width: 10.5rem;
+      width: 18ch;
     }
     100% {
       width: 0;
@@ -362,9 +367,11 @@
     width: 50px;
     height: 50px;
   }
-
-  .image-container img {
-    max-width: 150px;
+  .image-container .site-logo {
+    filter: drop-shadow(0 0 20px rgba(112, 218, 28, 0.3));
+    transition: all 0.5s ease;
+    height: 57px;
+    width: 344px;
   }
 }
 
