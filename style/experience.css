@@ -155,13 +155,20 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: #1c1c1c;
+  text-decoration: none;
 }
-
 .project-title span {
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #666;
   font-size: 0.95rem;
+}
+
+#linkSite {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6b73e4;
+  text-decoration: none;
 }
 
 /* Technologies */
