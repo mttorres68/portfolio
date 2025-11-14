@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://torresdev.prismecode.com.br/sitemap.xml
