@@ -2,3 +2,29 @@
 @import "header.css";
 @import "main.css";
 @import "experience.css";
+@import "education.css";
+@import "certificates.css";
+@import "footer.css";
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #70da1c, #d9f123);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #70da1c;
+}
